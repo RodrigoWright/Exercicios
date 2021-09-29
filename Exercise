@@ -1,0 +1,17 @@
+Exercício 1:
+Para qualquer figura geométrica conseguimos calcular sua área e seu perímetro. Sejam as seguintes figuras geométricas: 
+a) Figuras regulares (todos os lados possuem o mesmo tamanho): triangulo, quadrado, pentágono e hexagono. 
+b) Figuras irregulares: retangulo, losango, trapézio.
+
+Utilizando, ao máximo, os conceitos de Herança, faça o que se pede:
+i) crie um diagrama de classes UML capaz de capturar todos os atributos e métodos dessas figuras, em uma hierarquia de classes definida por relações de herança. 
+ii) implemente em Java um programa que seja capaz de instanciar diferentes objetos, de diferentes figuras geométricas, ler os dados da figura e calcular a área e o perímetro. Somente ao final da execução do programa, deverão ser apresentados os dados calculados de cada figura geométrica. 
+
+
+Exercício 2: 
+Progressões aritmeticas e progressões geométricas são sequencias de N números inteiros calculados a partir de um numero inicial a0, considerando-se uma razão r. Em progressões aritméticas o n-ésimo termo (an) é calculado como a soma da razão r e o termo anterior (an-1). Em progressões geométricas o n-ésimo termo (an) é calculado como o produto da razão r pelo termo anterior (an-1). 
+
+Utilizando ao máximo os conceitos de herança, faça o que se pede: 
+a) crie um diagrama de classes UML para um programa que seja capaz de criar diferentes progressões (aritméticas e / ou geométricas), ler os dados das progressões e calcular os termos das progressões. Detalhe: os termos deverão ser representados por uma classe específica.
+b) Implemente o programa em Java de modo que ele leia os dados de diversas progressões, calcule os termos das progressões. Somente ao final da execução do programa deverão ser apresentadas as progressões calculadas. 
+Obs.: deverá haver apenas uma única referencia capaz de armazenar todas as progressões aritméticas e / ou geométricas.
