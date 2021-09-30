@@ -1,26 +1,28 @@
 package UI;
 
 import FormasRegulares.*;
+import FormasIrregulares.*;
 import javax.swing.JOptionPane;
 
 public class UI {
     public static void main(String[] args) throws Exception {
         int opc = 0;
         FormasReg[] FReg = new FormasReg[0];
+        FormasIrreg[] FIrreg = new FormasIrreg[0];
 
         do{
             opc = menu();
             switch (opc) {
                 case 1:
-                    int opc2 = opc2();
-                    int n = numerodeformas();
+                    //int opc2 = opc2();
+                    //int n = numerodeformas();
 
-                    for(int i = 0; i < n ; i++){
+                    for(int i = 0; i < numerodeformas(); i++){
                         FormasReg[] temp = new FormasReg[FReg.length + 1];
                         for (int x = 0; x < FReg.length; x++){
                             temp[x] = FReg[x];
                         }
-                        switch (opc2) {
+                        switch (opc2()) {
                             case 1:
                                 Hexagono h = new Hexagono(getladoFormaReg(i));
                                 temp[FReg.length] = h;
@@ -41,6 +43,24 @@ public class UI {
                                 temp[FReg.length] = t;
                                 FReg = temp;
                                 break;                       
+                            default:
+                                break;
+                        }
+                    }
+                    break;
+                case 2:
+                    //int opc3 = opc3();
+                    //int n2 = numerodeformas();
+
+                    for (int i = 0; i < numerodeformas(); i++){
+                        FormasIrreg[] temp = new FormasIrreg[FIrreg.length + 1];
+                        for (int x = 0; x < FIrreg.length; x++){
+                            temp[x] = FIrreg[x];
+                        }
+                        switch (opc3()) {
+                            case 1:                                
+                                break;
+                        
                             default:
                                 break;
                         }
@@ -79,6 +99,16 @@ public class UI {
                                                                 "3 - Quadrado\n" +
                                                                 "4 - Triangulo\n" +
                                                                 "0 - Voltar");
+        int opc = Integer.parseInt(stropc);
+
+        return opc;
+    }
+
+    static int opc3(){
+        String stropc = JOptionPane.showInputDialog("Qual forma deseja Inserir?\n" +
+                                                    "1 - Losango\n" +
+                                                    "2 - Retangulo\n" +
+                                                    "3 - Trapezio\n");
         int opc = Integer.parseInt(stropc);
 
         return opc;
